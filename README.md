@@ -17,3 +17,12 @@ CONTAINER ID        IMAGE                 COMMAND             CREATED           
 To test, use the port that was just located:
 
 # ssh -p xxxx user@localhost 
+
+
+## In my example of integrating docker with Nuage after the VRS and docker-monitor has been deployed you can run the following command to link the container with the Nuage domain/zone and subnet.
+
+docker build -t sirwin/ssh:centos7 . 
+
+docker run -d -p 22 sirwin/ssh:centos7
+
+docker run -d -i -t -e "NUAGE-ENTERPRISE=acmecorp" -e "NUAGE-DOMAIN=Docker Domain" -e "NUAGE-ZONE=Docker Zone 1" -e "NUAGE-NETWORK=Subnet 1" -e "NUAGE-USER=docker" --name=centos1 --net=none sirwin/ssh:centos7

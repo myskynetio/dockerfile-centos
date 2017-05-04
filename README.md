@@ -25,7 +25,7 @@ To test, use the port that was just located:
 # Docker integration with Nuage
 In this example of integrating docker with Nuage, after the "VRS" and "docker-monitor" has been deployed and verified, you can run the following command to link a container with a Nuage enterprise/domain/zone and subnet.
 
-docker build -t sirwin/ssh:centos7 .
+	# docker build -t sirwin/ssh:centos7 .
 ```
 docker run -d -i -t -e "NUAGE-ENTERPRISE=acmecorp" -e "NUAGE-DOMAIN=Docker Domain" -e "NUAGE-ZONE=Docker Zone 1" -e "NUAGE-NETWORK=Subnet 1" -e "NUAGE-USER=docker" --name=centos1 --net=none sirwin/ssh:centos7
 ```

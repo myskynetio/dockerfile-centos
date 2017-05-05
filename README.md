@@ -1,7 +1,8 @@
 # dockerfiles-centos
 
 # Docker integration with Nuage
-In this example of integrating docker with Nuage, after the "VRS" and "docker-monitor" has been deployed and verified, you can run the following command to link a container with a Nuage enterprise/domain/zone and subnet.
+In this example of integrating docker with Nuage, following the VRS and Docker installation instructions from my blog before running this dockerfile.
+Shortlink to my blog post: http://wp.me/p8A18u-5Y
 
 Install git:
 

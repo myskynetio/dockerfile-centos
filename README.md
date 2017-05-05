@@ -28,12 +28,17 @@ In this example of integrating docker with Nuage, after the "VRS" and "docker-mo
 Install git:
 
 	# yum -y install git
+	
+Create a directory that you want to clone the repo to and change directory to it:
+
+	# mkdir -p /root/docker/centos7
+	# cd /root/docker/centos7
 
 Clone the repo to your docker host:
 
-	# git clone 
+	# git clone https://github.com/scottairwin/dockerfile-centos.git
 
-Copy the sources to your docker host and build the container:
+Build the container (note: you can utilize whatever username you want, I'm using "sirwin"):
 
 	# docker build -t sirwin/ssh:centos7 .
 

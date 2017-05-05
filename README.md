@@ -25,6 +25,16 @@ To test, use the port that was just located:
 # Docker integration with Nuage
 In this example of integrating docker with Nuage, after the "VRS" and "docker-monitor" has been deployed and verified, you can run the following command to link a container with a Nuage enterprise/domain/zone and subnet.
 
+Install git:
+
+	# yum -y install git
+
+Clone the repo to your docker host:
+
+	# git clone 
+
+Copy the sources to your docker host and build the container:
+
 	# docker build -t sirwin/ssh:centos7 .
 
 To run:

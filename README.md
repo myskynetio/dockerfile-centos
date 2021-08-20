@@ -15,7 +15,7 @@ Create a directory that you want to clone the repo to and change directory to it
 
 Clone the repo to your docker host:
 
-	# git clone https://github.com/scottairwin/dockerfile-centos.git
+	# git clone https://github.com/myskynetio/dockerfile-centos.git
 
 Build the container (note: you can utilize whatever username you want, I'm using "sirwin"):
 
